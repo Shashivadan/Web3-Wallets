@@ -30,7 +30,10 @@ export default function Showkeys({ WalletKeys }: { WalletKeys: WalletKeys[] }) {
             <AlertTitle className="flex  gap-1">
               {" "}
               public key :{" "}
-              <div className=" text-green-500"> {key.publicKey}</div>
+              <div className=" text-green-500 overflow-hidden text-ellipsis max-w-full">
+                {" "}
+                {key.publicKey}
+              </div>
             </AlertTitle>
             <AlertDescription className="text-sm flex gap-1">
               <div>Private Key:</div>
